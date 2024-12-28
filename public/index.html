@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form with Backend</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="form-container">
+    <h1>Student Information Form</h1>
+    <form action="/submit" method="POST" id="studentForm">
+      <label for="firstName">First Name:</label>
+      <input type="text" id="firstName" name="firstName" required>
+
+      <label for="lastName">Last Name:</label>
+      <input type="text" id="lastName" name="lastName" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="dob">Date of Birth:</label>
+      <input type="date" id="dob" name="dob" required>
+
+      <label for="gender">Gender:</label>
+      <select id="gender" name="gender" required>
+        <option value="">Select</option>
+        <option value="Male">Male</option>
+        <option value="Female">Female</option>
+        <option value="Other">Other</option>
+      </select>
+
+      <label for="phone">Phone Number:</label>
+      <input type="tel" id="phone" name="phone" required>
+
+      <label for="address">Address:</label>
+      <textarea id="address" name="address" rows="3" required></textarea>
+
+      <label for="city">City:</label>
+      <input type="text" id="city" name="city" required>
+
+      <label for="state">State:</label>
+      <input type="text" id="state" name="state" required>
+
+      <label for="country">Country:</label>
+      <input type="text" id="country" name="country" required>
+
+      <label for="zip">Zip Code:</label>
+      <input type="text" id="zip" name="zip" required>
+
+      <label for="course">Course Enrolled:</label>
+      <input type="text" id="course" name="course" required>
+
+      <label for="year">Year of Study:</label>
+      <input type="number" id="year" name="year" min="1" max="5" required>
+
+      <label for="cgpa">CGPA:</label>
+      <input type="number" id="cgpa" name="cgpa" step="0.01" required>
+
+      <label for="hobbies">Hobbies:</label>
+      <input type="text" id="hobbies" name="hobbies">
+
+      <label for="skills">Skills:</label>
+      <textarea id="skills" name="skills" rows="3"></textarea>
+
+      <button type="submit">Submit</button>
+    </form>
+    <nav>
+      <a href="/all-data">View All Data</a> | 
+      <a href="/table-view">View Data in Table</a>
+    </nav>
+  </div>
+</body>
+</html>
